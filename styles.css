@@ -1,0 +1,53 @@
+/*###########Defaults##############*/
+nav, header, footer{
+    display: block;
+}
+/*set everything edge to edge*/
+body{
+    line-height: 1;
+    margin: 0;
+    font-family: sans-serif;
+}
+/*#############Nav bar####################*/
+nav{
+    width: 100%;
+    margin: 0;
+}
+nav ul{
+    background-color: #eee;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+ul.topnav li{
+    list-style: none;
+    float: left;
+}
+ul.topnav li.topnav_right{
+    float: right;
+}
+
+ul.topnav li a{
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #666;
+}
+/*change to green when user move the mouse*/
+ul.topnav li a:hover{
+    background-color: #0080ff;
+    color: white;
+}
+ul.topnav li.dropDownIcon{
+    display: none;
+}
+
+/*#############Mobile##################*/
+@media screen and (max-width: 680px){
+    ul.topnav li:not(:nth-child(1)){
+        display: none;
+    }
+}
