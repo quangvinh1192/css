@@ -8,6 +8,17 @@ body{
     margin: 0;
     font-family: sans-serif;
 }
+label{
+    font-size: 30px;
+    font-weight: 700;
+}
+p{
+    font-size: 25 px;
+}
+article p{
+    font-size: 25px;
+    padding: 10px;
+}
 /*#############Nav bar####################*/
 nav{
     width: 100%;
@@ -73,11 +84,20 @@ ul.topnav li.dropDownIcon{
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+*{
+    box-sizing: border-box;
+}
+/*important to box*/
+
 h1.first_coulmn{
     color: white;
     font-size: 50px;
     margin: 0;
     
+}
+h1.sectionHeader{
+    font-size: 56px;
+    text-align: center;
 }
 form h2{
     color: white;
@@ -99,6 +119,43 @@ input[type="text"]{
 }
 .rightside-col{
     margin-right: 10%;
+}
+div.box{
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 0 0 1px rgba(0,0,0,15), 
+        0 2px 3px 0 rgba(0,0,0,.1);
+    margin: 3%;
+    padding: 36px 24px 40px 24px;
+    border-radius: 5%;
+}
+div.icon{
+    width: 100%;
+    padding: auto;
+}
+button{
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #0069ff;
+    padding: 15px 60px;
+    text-align: center;
+    display: block;
+    border-radius: 6%;
+}
+button.learnMore{
+    display: block;
+    margin: auto;
+}
+div.learnIcon{
+    margin: 10px;
+}
+div.learnIcon img{
+    display: block;
+    margin: auto;
+    box-shadow: -2px -2px 5px 2px rgba(0,0,0,.15), 
+        2px 2px 4px 2px rgba(0,0,0,1);
+    width: 100%;
 }
 /*############# Mobile ##################*/
 @media screen and (max-width: 680px){
@@ -125,10 +182,11 @@ input[type="text"]{
         display: block;
         text-align: left;
     }
-    .col-6{
+    .col-6, .col-4, .col-7, .col-5{
         width: 100%; 
         margin: 0;
     }
+    
     .leftside-col , .rightside-col{
         margin: 15px;
     }
@@ -140,5 +198,12 @@ input[type="text"]{
         width: 100%;
         margin: 0;
         overflow: hidden;
+    }
+    div.box{
+        padding: 5px;
+        display: block;
+    }
+    .sectionHeader{
+        font-size: 35px;
     }
 }
