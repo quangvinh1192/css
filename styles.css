@@ -110,6 +110,24 @@ input[type="text"]{
     padding: 5px;
     border-radius: 7px;
 }
+footer.footsy{
+    background-color: #666;
+    padding-left: 10%;
+}
+footer.footsy h1{
+    font-size: 35px;
+    color: #fff;
+}
+footer.footsy ul{
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+}
+footer.footsy ul li{
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.3;
+}
 /*###############Custom styles####################*/
 #section-1-gradient{
     background: linear-gradient(#076DFF, #65a5ff);
@@ -186,7 +204,10 @@ div.learnIcon img{
         width: 100%; 
         margin: 0;
     }
-    
+    div.mobile{
+        width: 50%;
+        display: block;
+    }
     .leftside-col , .rightside-col{
         margin: 15px;
     }
@@ -206,4 +227,5 @@ div.learnIcon img{
     .sectionHeader{
         font-size: 35px;
     }
+    
 }
